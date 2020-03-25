@@ -1,0 +1,26 @@
+##########################################################################################
+        		This script is designed for COG annotation.
+##########################################################################################
+
+It is suitable for two kinds of results.
+1.
+#diamond makedb --in myva -p 10 -d cog
+#diamond blastx -d /media/ruizhi/database/COG/cog -e 1e-5 -k 1 --sensitive -q query -o result
+
+2.
+#makeblastdb -in myva -dbtype prot -title cog -parse_seqids -out cog
+#blastx -d /media/ruizhi/database/COG/cog -e 1e-5 -k 1 --sensitive -q query -o result
+
+#Usage:
+step1
+fun.pickle.py
+# make sure that fun.pickle.py and fun.txt in the same dir
+
+step2
+whog.pickle.py
+# make sure that whog.pickle.py and whog in the same dir
+
+step3
+cog_annotation.py -d whog.dict -f fun.dict -b test.blast.result -o test.cog.annotation
+
+
