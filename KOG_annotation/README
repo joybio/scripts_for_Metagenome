@@ -1,5 +1,5 @@
 ##########################################################################################
-        		This script is designed for COG annotation.
+        		This script is designed for KOG annotation.
 ##########################################################################################
 
 It is suitable for two kinds of results.
@@ -17,10 +17,10 @@ fun.pickle.py
 # make sure that fun.pickle.py and fun.txt in the same dir
 
 step2
-whog.pickle.py
-# make sure that whog.pickle.py and whog in the same dir
+kog.pickle.py
+# make sure that whog.pickle.py and kog in the same dir
 
 step3
-cog_annotation.py -d whog.dict -f fun.dict -b test.blast.result -o test.cog.annotation
+kog_annotation.py -d whog.dict -f fun.dict -b test.blast.result -o test.kog.annotation
 
 
