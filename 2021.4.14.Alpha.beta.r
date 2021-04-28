@@ -4,7 +4,7 @@
 #载入相应的包
 #如果未安装，请按下行代码安装
 #install.package(c("ggplot2","reshape2")
-setwd("D:\\项目/2021.3.metagenome/Alpha_beta/")
+setwd("D:\\2021.3.metagenome/Alpha_beta/")
 
 library(ggplot2)
 library(reshape2)
@@ -350,7 +350,7 @@ ggsave("Alpha/Rank-abundance.pdf",width = 20,height = 20)
 ################################################################################
 ##########################beta##########################################
 ################################################################################
-setwd("D:\\项目/2021.3.metagenome/Alpha_beta/")
+setwd("D:\\2021.3.metagenome/Alpha_beta/")
 
 library("phyloseq")
 library("ggplot2")
