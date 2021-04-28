@@ -1,4 +1,4 @@
-setwd("D:\\项目/2021.3.metagenome/Alpha_beta/")
+setwd("D:\\2021.3.metagenome/Alpha_beta/")
 
 library(Hmisc)
 library(psych)
