@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd("D://项目/2021.3.metagenome/diff/")
+setwd("D://2021.3.metagenome/diff/")
 library(DESeq2)
 reads_matrix <- read.csv("total.NumReads",header = T,sep = "\t",row.names=1,check.names=F)
 #reads_matrix <- reads_matrix[,-1]
